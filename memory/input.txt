@@ -1,0 +1,11 @@
+This
+is
+a
+file
+with
+a
+word
+per
+line
+
+end
