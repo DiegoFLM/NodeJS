@@ -1,4 +1,3 @@
-//const moduleName =require('fs');
 const fs =require('fs');
 
 function read(path, cb){

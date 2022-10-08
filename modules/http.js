@@ -8,9 +8,10 @@ function router(request, response) {
     // response.writeHead(222, {'Content-Type': 'text/plain'});
     // response.write('Hello World');
 
-    switch (request.url) {
+    switch (request.url) {        
         case '/hello':
-            response.write('Hi');
+            let greeting = hi();
+            response.write(greeting);
             response.end();
             break;
 
@@ -20,6 +21,10 @@ function router(request, response) {
     }
 
     //response.end();
+}
+
+function hi(){
+    return 'Hi';
 }
 
 console.log('Server running at http://localhost:3000/');
